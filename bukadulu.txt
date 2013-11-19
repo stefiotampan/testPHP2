@@ -1,3 +1,8 @@
+Database mysql :
+hasil dump mysql akan ada di file dan silahkan masukan ke database local anda 
+
+setting(username, password, db) dapat dilakukan di file sqltoxml.php
+
 Cara Pakai :
 1. localhost/testPHP2/webservice.php?search(nama makanan)
 
