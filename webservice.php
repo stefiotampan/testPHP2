@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
+<?php
+        error_reporting(0);
         $i = 0;
         $context  = stream_context_create(array('http' => array('header' => 'Accept: application/xml')));
         $url = 'http://localhost/testPHP2/sqltoxml.php';
@@ -28,7 +17,7 @@ and open the template in the editor.
         $makanan = $xml->tabel_1;
         $end = FALSE;
         
-        while ($end != TRUE){
+        while ($end != TRUE && $i < 100){
             if($cari == $makanan2[$i]->nama){    
             echo "<p>Nama  :       ".$makanan2[$i]->nama."</p><br/>";
             echo "<p>Harga :       ".$makanan2[$i]->harga."</p><br/>";
@@ -54,6 +43,8 @@ and open the template in the editor.
                 $i = $i +1;
             }
         }
-        ?>
-    </body>
-</html>
+    
+    if ($end == FALSE){
+        echo "makanan tidak ditemukan";
+    }
+?>
