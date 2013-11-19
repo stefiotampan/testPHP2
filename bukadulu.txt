@@ -1,5 +1,5 @@
 Cara Pakai :
-1. localhost/testPHP2/index.php?search(nama makanan)
+1. localhost/testPHP2/webservice.php?search(nama makanan)
 
 (nama makanan) diganti naman makanan yang ada di database
 
