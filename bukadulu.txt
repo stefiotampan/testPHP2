@@ -1,3 +1,5 @@
+<---- Untuk Web Service 1 ---->
+
 Database mysql :
 hasil dump mysql akan ada di file dan silahkan masukan ke database local anda 
 
@@ -9,3 +11,12 @@ Cara Pakai :
 (nama makanan) diganti naman makanan yang ada di database
 
 Terima Kasih :D
+
+
+<---- Untuk Web Service 2 (Membaca fungsi di projek lain) ---->
+
+1. Buka input.html
+
+2. Masukkan Nama Folder yang ingin dibuka 
+
+3. Submit
